@@ -5,7 +5,7 @@ function scrollToModel() {
 
 function startScenario(scenario) {
     // Construct the URL based on the scenario with a subdirectory
-    let fileName = "linux" + scenario.toLowerCase().replace(/\s+/g, '-') + '.html';
+    let fileName = "linux/" + scenario.toLowerCase().replace(/\s+/g, '-') + '.html';
     window.location.href = fileName;
 }
 

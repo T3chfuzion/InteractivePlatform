@@ -1,5 +1,16 @@
 const scenarios = [
     {
+        title: "Welcome!",
+        description: "Welcome!",
+        options: [
+            "Welcome!"
+        ],
+        outcomes: [
+            "Welcome!"
+        ]
+    },
+       
+    {
         title: "Checking Disk Space",
         description: "User: I received a 'disk space full' error on my server. What should I do?",
         options: [
