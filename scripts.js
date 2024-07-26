@@ -4,9 +4,11 @@ function scrollToModel() {
 }
 
 function startScenario(scenario) {
-    alert(`Starting the ${scenario} learning module...`);
-    // Here you can redirect to the actual learning module page or load the content dynamically
+    // Construct the URL based on the scenario with a subdirectory
+    let fileName = "linux" + scenario.toLowerCase().replace(/\s+/g, '-') + '.html';
+    window.location.href = fileName;
 }
+
 
 function signUp() {
     alert('Redirecting to the sign-up page...');
