@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Learning Interactive Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Master Information Technology</h1>
+        <p>Interactive Learning Model for IT Professionals</p>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to Your IT Learning Journey</h2>
+            <p>Our interactive model provides hands-on learning experiences in various IT domains, from system administration to cloud computing.</p>
+            <button onclick="scrollToModel()">Explore the Model</button>
+        </section>
+        <section id="model" class="hidden">
+            <h2>Interactive IT Learning Model</h2>
+            <p>Engage with real-world scenarios, practice troubleshooting, and master the skills needed to excel in IT.</p>
+            <div class="scenarios">
+                <div class="scenario">
+                    <h3>Linux Administration</h3>
+                    <p>Learn to manage and troubleshoot Linux systems effectively.</p>
+                    <button onclick="startScenario('Linux Administration')">Start Learning</button>
+                </div>
+                <div class="scenario">
+                    <h3>Cloud Computing</h3>
+                    <p>Understand the fundamentals of cloud infrastructure and services.</p>
+                    <button onclick="startScenario('Cloud Computing')">Start Learning</button>
+                </div>
+                <div class="scenario">
+                    <h3>Network Security</h3>
+                    <p>Protect your network with comprehensive security practices.</p>
+                    <button onclick="startScenario('Network Security')">Start Learning</button>
+                </div>
+            </div>
+        </section>
+        <section id="call-to-action">
+            <h2>Ready to Advance Your IT Skills?</h2>
+            <p>Sign up today and get access to our full range of interactive learning modules.</p>
+            <button onclick="signUp()">Sign Up Now</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 IT Learning Interactive Model. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
