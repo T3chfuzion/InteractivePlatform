@@ -1,85 +1,156 @@
-body {
-    font-family: Arial, sans-serif;
+
+body, h1, h2, h3, p, button {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    padding: 50px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 2rem;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 main {
-    padding: 20px;
+    padding: 1rem;
 }
 
-section {
-    margin: 40px 0;
-}
-
-#intro {
+#intro, #model {
     text-align: center;
 }
 
-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#intro h2 {
+    font-size: 1.5rem;
 }
 
-button:hover {
-    background-color: #555;
+#intro p {
+    font-size: 1rem;
+}
+
+#intro button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+#model {
+    margin-top: 2rem;
 }
 
 .scenarios {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .scenario {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    width: 30%;
-    min-width: 200px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width: calc(33% - 1rem); /* Adjust width for three columns */
     text-align: center;
+}
+
+.scenario h3 {
+    font-size: 1.25rem;
+}
+
+.scenario p {
+    font-size: 1rem;
+}
+
+.scenario button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
 }
 
 #call-to-action {
     text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 50px 20px;
+    margin-top: 2rem;
 }
 
-.hidden {
-    display: none;
+#call-to-action h2 {
+    font-size: 1.5rem;
+}
+
+#call-to-action p {
+    font-size: 1rem;
+}
+
+#call-to-action button {
+    background-color: #ffc107;
+    border: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: absolute;
+    padding: 1rem;
+    position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .scenario {
+        width: calc(50% - 1rem); /* Adjust width for two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .scenario {
+        width: 100%; /* Full width for very small screens */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.875rem;
+    }
+
+    #intro h2, #call-to-action h2 {
+        font-size: 1.25rem;
+    }
+
+    #intro p, #call-to-action p {
+        font-size: 0.875rem;
+    }
+
+    #intro button, .scenario button, #call-to-action button {
+        font-size: 0.875rem;
+    }
 }
