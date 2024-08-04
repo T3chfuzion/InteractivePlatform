@@ -1,4 +1,5 @@
 
+/* Basic Reset */
 body, h1, h2, h3, p, button {
     margin: 0;
     padding: 0;
@@ -6,112 +7,169 @@ body, h1, h2, h3, p, button {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4; /* Light background color */
 }
 
+/* Header */
 header {
-    background: #333;
+    background: linear-gradient(135deg, #4a90e2, #50e3c2); /* Gradient background */
     color: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
+/* Main Content */
 main {
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#intro, #model {
+/* Intro Section */
+#intro {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 #intro h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #333;
 }
 
 #intro p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #666;
+    margin: 1rem 0;
 }
 
 #intro button {
-    background-color: #28a745;
+    background-color: #28a745; /* Green */
     border: none;
     color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
     cursor: pointer;
     border-radius: 0.3rem;
+    transition: background-color 0.3s;
 }
 
+#intro button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Model Section */
 #model {
-    margin-top: 2rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem auto; /* Center horizontally with automatic margins */
+    max-width: 90%; /* Limit width for smaller screens */
 }
 
 .scenarios {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
+    margin-top: 1.5rem;
 }
 
 .scenario {
-    background: #f8f9fa;
+    background: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 0.3rem;
-    padding: 1rem;
-    width: calc(33% - 1rem); /* Adjust width for three columns */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: calc(33% - 1.5rem); /* Adjust width for three columns */
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scenario:hover {
+    background-color: #e9ecef; /* Light gray background on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
 .scenario h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .scenario p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #666;
 }
 
 .scenario button {
-    background-color: #007bff;
+    background-color: #007bff; /* Blue */
     border: none;
     color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
     cursor: pointer;
     border-radius: 0.3rem;
+    transition: background-color 0.3s;
 }
 
+.scenario button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Call-to-Action Section */
 #call-to-action {
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 2rem;
 }
 
 #call-to-action h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #333;
 }
 
 #call-to-action p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #666;
+    margin: 1rem 0;
 }
 
 #call-to-action button {
-    background-color: #ffc107;
+    background-color: #ffc107; /* Yellow */
     border: none;
     color: black;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
     cursor: pointer;
     border-radius: 0.3rem;
+    transition: background-color 0.3s;
 }
 
+#call-to-action button:hover {
+    background-color: #e0a800; /* Darker yellow */
+}
+
+/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -125,7 +183,7 @@ footer {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .scenario {
-        width: calc(50% - 1rem); /* Adjust width for two columns on smaller screens */
+        width: calc(50% - 1rem); /* Two columns on smaller screens */
     }
 }
 
@@ -135,22 +193,22 @@ footer {
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     header p {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     #intro h2, #call-to-action h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     #intro p, #call-to-action p {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     #intro button, .scenario button, #call-to-action button {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 }
