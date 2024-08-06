@@ -115,7 +115,7 @@ function nextQuestion() {
         document.getElementById('question-section').innerHTML = `
             <h2>Congratulations!</h2>
             <p>You have completed all the questions.</p>
-            <button onclick="location.href='/index.html'">Back to Home</button>
+            <button onclick="location.href='../index.html'">Back to Home</button>
         `;
     }
 }
